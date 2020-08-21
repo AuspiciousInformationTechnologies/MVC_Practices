@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MVC_PracticeModelStoreContainer" CdmEntityContainer="MVC_PracticeEntities">
+    <EntitySetMapping Name="tbl_Async">
+      <EntityTypeMapping TypeName="MVC_PracticeModel.tbl_Async">
+        <MappingFragment StoreEntitySet="tbl_Async">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EMailID" ColumnName="EMailID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
