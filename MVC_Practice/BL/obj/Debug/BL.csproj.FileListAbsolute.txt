@@ -1,0 +1,5 @@
+H:\MVC_Practices\MVC_Practice\BL\bin\Debug\BL.dll
+H:\MVC_Practices\MVC_Practice\BL\bin\Debug\BL.pdb
+H:\MVC_Practices\MVC_Practice\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+H:\MVC_Practices\MVC_Practice\BL\obj\Debug\BL.dll
+H:\MVC_Practices\MVC_Practice\BL\obj\Debug\BL.pdb
