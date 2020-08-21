@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async_Controller", "Async_C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{3C242F2A-7829-4D59-84FC-40E48B0250D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Area_MVC", "Area_MVC\Area_MVC.csproj", "{0FED7BF0-9B8D-4BA3-A4DA-090F0DE9728B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{3C242F2A-7829-4D59-84FC-40E48B0250D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C242F2A-7829-4D59-84FC-40E48B0250D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C242F2A-7829-4D59-84FC-40E48B0250D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FED7BF0-9B8D-4BA3-A4DA-090F0DE9728B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FED7BF0-9B8D-4BA3-A4DA-090F0DE9728B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FED7BF0-9B8D-4BA3-A4DA-090F0DE9728B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FED7BF0-9B8D-4BA3-A4DA-090F0DE9728B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
