@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model_Binder", "Model_Binde
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom_ModelBinder", "Custom_ModelBinder\Custom_ModelBinder.csproj", "{E904A1E0-8540-4B06-83F0-4C3189B418D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bundling_Minification", "Bundling_Minification\Bundling_Minification.csproj", "{00DC67FD-A32F-48D6-AD7F-0E9AC348E9A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{E904A1E0-8540-4B06-83F0-4C3189B418D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E904A1E0-8540-4B06-83F0-4C3189B418D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E904A1E0-8540-4B06-83F0-4C3189B418D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00DC67FD-A32F-48D6-AD7F-0E9AC348E9A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00DC67FD-A32F-48D6-AD7F-0E9AC348E9A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00DC67FD-A32F-48D6-AD7F-0E9AC348E9A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00DC67FD-A32F-48D6-AD7F-0E9AC348E9A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
