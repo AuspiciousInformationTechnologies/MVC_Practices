@@ -43,6 +43,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bundling_Minification", "Bu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bundling__Minification", "Bundling__Minification\Bundling__Minification.csproj", "{91B73646-B76B-4B71-9C3A-3BA06067D08A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Return_Json", "Return_Json\Return_Json.csproj", "{D2BF48DE-33F6-47A9-8386-4656B97F4302}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetData_Ajax", "GetData_Ajax\GetData_Ajax.csproj", "{FA596DCF-9C46-434D-A339-216F0B4B6BD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostData_Ajax", "PostData_Ajax\PostData_Ajax.csproj", "{7BC167F4-2345-45B0-9F28-5F31026041F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxFrom_HtmlHelpers", "AjaxFrom_HtmlHelpers\AjaxFrom_HtmlHelpers.csproj", "{6037890F-C904-4427-9258-110F9681E637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxActionLink", "AjaxActionLink\AjaxActionLink.csproj", "{FDF0A059-D025-462A-96EC-4EBA0C4F459C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialView", "PartialView\PartialView.csproj", "{85959F23-C55B-415C-AC7F-BAAE1FFE274A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +141,30 @@ Global
 		{91B73646-B76B-4B71-9C3A-3BA06067D08A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91B73646-B76B-4B71-9C3A-3BA06067D08A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91B73646-B76B-4B71-9C3A-3BA06067D08A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2BF48DE-33F6-47A9-8386-4656B97F4302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2BF48DE-33F6-47A9-8386-4656B97F4302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2BF48DE-33F6-47A9-8386-4656B97F4302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2BF48DE-33F6-47A9-8386-4656B97F4302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA596DCF-9C46-434D-A339-216F0B4B6BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA596DCF-9C46-434D-A339-216F0B4B6BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA596DCF-9C46-434D-A339-216F0B4B6BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA596DCF-9C46-434D-A339-216F0B4B6BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BC167F4-2345-45B0-9F28-5F31026041F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BC167F4-2345-45B0-9F28-5F31026041F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BC167F4-2345-45B0-9F28-5F31026041F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BC167F4-2345-45B0-9F28-5F31026041F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6037890F-C904-4427-9258-110F9681E637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6037890F-C904-4427-9258-110F9681E637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6037890F-C904-4427-9258-110F9681E637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6037890F-C904-4427-9258-110F9681E637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDF0A059-D025-462A-96EC-4EBA0C4F459C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF0A059-D025-462A-96EC-4EBA0C4F459C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF0A059-D025-462A-96EC-4EBA0C4F459C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF0A059-D025-462A-96EC-4EBA0C4F459C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85959F23-C55B-415C-AC7F-BAAE1FFE274A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85959F23-C55B-415C-AC7F-BAAE1FFE274A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85959F23-C55B-415C-AC7F-BAAE1FFE274A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85959F23-C55B-415C-AC7F-BAAE1FFE274A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
