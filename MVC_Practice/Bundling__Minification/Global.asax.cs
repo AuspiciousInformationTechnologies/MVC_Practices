@@ -4,7 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
-
+using System.Web.Optimization;
+using Bundling__Minification.App_Start;
 namespace Bundling__Minification
 {
     public class MvcApplication : System.Web.HttpApplication
@@ -13,6 +14,8 @@ namespace Bundling__Minification
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
+            
         }
     }
 }
