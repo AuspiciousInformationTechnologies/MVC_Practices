@@ -11,7 +11,7 @@ namespace Bundling_Minification.App_Start
 
         public static void RegisterBundle(BundleCollection bndlescollection)
         {
-            var bundle = new ScriptBundle("~/bundles/JS");
+            var bundle = new ScriptBundle("~/Content/JS");
 
             bundle.Include(
                             "~/Content/JS/JavaScript1.js",
