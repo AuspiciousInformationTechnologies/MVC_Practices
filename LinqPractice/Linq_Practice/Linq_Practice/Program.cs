@@ -19,24 +19,49 @@ namespace Linq_Practice
             };
 
             var basicQuery = (from emp in employee
-                           select emp).ToList();
+                              select emp).ToList();
 
-            foreach(var item in basicQuery)
+            var methodsyntax = employee.ToList();
+            var methodsyntax1 = employee.Select(e => e.ID).ToList();
+
+            //
+            var methodsyntax2 = employee.Select(e => new Employee()
+            {
+                ContactNo = e.ContactNo,
+                EmployeeName = e.EmployeeName,
+                EmailID = e.EmailID,
+                ID = e.ID
+            }).ToList();
+
+
+            //Anonymous Type
+            var methodsyntax23 = employee.Select(e => new
+            {
+                ContactNo = e.ContactNo,
+                EmployeeName = e.EmployeeName,
+                EmailID = e.EmailID,
+                ID = e.ID
+            }).ToList();
+
+
+
+
+            foreach (var item in methodsyntax2)
             {
 
                 Console.WriteLine($"ID={item.ID},\n Name={item.EmployeeName},\n Email ID={item.EmailID},\n Contact No={item.ContactNo}");
                 Console.ReadLine();
             }
 
-
+            //Anonymous Type
             var basicQuery1 = (from emp1 in employee
-                              select new
-                              {
-                                  emp1.EmployeeName,
-                                  emp1.ID,
-                                  emp1.ContactNo,
-                                  emp1.EmailID,
-                              }).ToList();
+                               select new
+                               {
+                                   emp1.EmployeeName,
+                                   emp1.ID,
+                                   emp1.ContactNo,
+                                   emp1.EmailID,
+                               }).ToList();
 
 
 
@@ -47,6 +72,14 @@ namespace Linq_Practice
                 Console.ReadLine();
             }
 
+            //Select Data Using Index
+            var query = employee.Select((emp, index) => new { Index = index, ID = emp.ID, EmployeeName = emp.EmployeeName }).ToList();
+            foreach (var item in query)
+            {
+
+                Console.WriteLine($"ID={item.ID},\n Name={item.EmployeeName}");
+                Console.ReadLine();
+            }
         }
     }
 }
