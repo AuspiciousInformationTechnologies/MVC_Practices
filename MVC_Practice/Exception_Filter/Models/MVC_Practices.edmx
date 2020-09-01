@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MVC_PracticeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_Async">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="200" />
+          <Property Name="EMailID" Type="varchar" MaxLength="400" Nullable="false" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="tblError_Log">
+          <Key>
+            <PropertyRef Name="Error_ID" />
+          </Key>
+          <Property Name="Error_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GUID" Type="varchar(max)" />
+          <Property Name="Error_Name" Type="varchar(max)" />
+          <Property Name="Error_Message" Type="varchar(max)" />
+          <Property Name="Error_StackTrace" Type="varchar(max)" />
+          <Property Name="Error_ControllerName" Type="varchar(max)" />
+          <Property Name="Error_ActionName" Type="varchar(max)" />
+          <Property Name="Error_Time" Type="varchar(max)" />
+          <Property Name="Erro_SystemIP" Type="varchar(max)" />
+          <Property Name="Error_MacAddress" Type="varchar(max)" />
+          <Property Name="Error_PublicID" Type="varchar(max)" />
+          <Property Name="Error_UserName" Type="varchar(max)" />
+          <Property Name="Error_SystemName" Type="varchar(max)" />
+          <Property Name="Error_Browser" Type="varchar(max)" />
+        </EntityType>
+        <Function Name="Usp_Error_Log" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="GUID" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Error_Name" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Error_Message" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Error_StackTrace" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Error_ControllerName" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Error_ActionName" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Error_Time" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Erro_SystemIP" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Error_MacAddress" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Error_PublicID" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Error_UserName" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Error_SystemName" Type="varchar(max)" Mode="In" />
+          <Parameter Name="Error_Browser" Type="varchar(max)" Mode="In" />
+        </Function>
+        <EntityContainer Name="MVC_PracticeModelStoreContainer">
+          <EntitySet Name="tbl_Async" EntityType="Self.tbl_Async" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblError_Log" EntityType="Self.tblError_Log" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MVC_PracticeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbl_Async">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="EMailID" Type="String" MaxLength="400" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="tblError_Log">
+          <Key>
+            <PropertyRef Name="Error_ID" />
+          </Key>
+          <Property Name="Error_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GUID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Error_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Error_Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Error_StackTrace" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Error_ControllerName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Error_ActionName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Error_Time" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Erro_SystemIP" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Error_MacAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Error_PublicID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Error_UserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Error_SystemName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Error_Browser" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="MVC_PracticeEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_Async" EntityType="Self.tbl_Async" />
+          <EntitySet Name="tblError_Log" EntityType="Self.tblError_Log" />
+          <FunctionImport Name="Usp_Error_Log">
+            <Parameter Name="GUID" Mode="In" Type="String" />
+            <Parameter Name="Error_Name" Mode="In" Type="String" />
+            <Parameter Name="Error_Message" Mode="In" Type="String" />
+            <Parameter Name="Error_StackTrace" Mode="In" Type="String" />
+            <Parameter Name="Error_ControllerName" Mode="In" Type="String" />
+            <Parameter Name="Error_ActionName" Mode="In" Type="String" />
+            <Parameter Name="Error_Time" Mode="In" Type="String" />
+            <Parameter Name="Erro_SystemIP" Mode="In" Type="String" />
+            <Parameter Name="Error_MacAddress" Mode="In" Type="String" />
+            <Parameter Name="Error_PublicID" Mode="In" Type="String" />
+            <Parameter Name="Error_UserName" Mode="In" Type="String" />
+            <Parameter Name="Error_SystemName" Mode="In" Type="String" />
+            <Parameter Name="Error_Browser" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MVC_PracticeModelStoreContainer" CdmEntityContainer="MVC_PracticeEntities">
+          <EntitySetMapping Name="tbl_Async">
+            <EntityTypeMapping TypeName="MVC_PracticeModel.tbl_Async">
+              <MappingFragment StoreEntitySet="tbl_Async">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="EMailID" ColumnName="EMailID" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblError_Log">
+            <EntityTypeMapping TypeName="MVC_PracticeModel.tblError_Log">
+              <MappingFragment StoreEntitySet="tblError_Log">
+                <ScalarProperty Name="Error_ID" ColumnName="Error_ID" />
+                <ScalarProperty Name="GUID" ColumnName="GUID" />
+                <ScalarProperty Name="Error_Name" ColumnName="Error_Name" />
+                <ScalarProperty Name="Error_Message" ColumnName="Error_Message" />
+                <ScalarProperty Name="Error_StackTrace" ColumnName="Error_StackTrace" />
+                <ScalarProperty Name="Error_ControllerName" ColumnName="Error_ControllerName" />
+                <ScalarProperty Name="Error_ActionName" ColumnName="Error_ActionName" />
+                <ScalarProperty Name="Error_Time" ColumnName="Error_Time" />
+                <ScalarProperty Name="Erro_SystemIP" ColumnName="Erro_SystemIP" />
+                <ScalarProperty Name="Error_MacAddress" ColumnName="Error_MacAddress" />
+                <ScalarProperty Name="Error_PublicID" ColumnName="Error_PublicID" />
+                <ScalarProperty Name="Error_UserName" ColumnName="Error_UserName" />
+                <ScalarProperty Name="Error_SystemName" ColumnName="Error_SystemName" />
+                <ScalarProperty Name="Error_Browser" ColumnName="Error_Browser" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Usp_Error_Log" FunctionName="MVC_PracticeModel.Store.Usp_Error_Log" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

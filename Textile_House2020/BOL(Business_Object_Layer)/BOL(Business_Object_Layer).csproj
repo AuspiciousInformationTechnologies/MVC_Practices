@@ -10,10 +10,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BOL_Business_Object_Layer_</RootNamespace>
     <AssemblyName>BOL%28Business_Object_Layer%29</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,54 +55,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="mCountry.cs">
-      <DependentUpon>TextileHouse_EDM.tt</DependentUpon>
-    </Compile>
+    <Compile Include="BusinessEntitiesLayer.cs" />
+    <Compile Include="Country.cs" />
+    <Compile Include="ICountry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TextileHouse_EDM.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TextileHouse_EDM.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TextileHouse_EDM.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TextileHouse_EDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TextileHouse_EDM.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TextileHouse_EDM.edmx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EntityDeploy Include="TextileHouse_EDM.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TextileHouse_EDM.Designer.cs</LastGenOutput>
-    </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
     <None Include="packages.config" />
-    <None Include="TextileHouse_EDM.edmx.diagram">
-      <DependentUpon>TextileHouse_EDM.edmx</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="TextileHouse_EDM.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TextileHouse_EDM.edmx</DependentUpon>
-      <LastGenOutput>TextileHouse_EDM.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="TextileHouse_EDM.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TextileHouse_EDM.edmx</DependentUpon>
-      <LastGenOutput>TextileHouse_EDM.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExceptionLayer\ExceptionLayer.csproj">
+      <Project>{842fc5be-9fb7-4edd-a6c7-812ffaa10358}</Project>
+      <Name>ExceptionLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
